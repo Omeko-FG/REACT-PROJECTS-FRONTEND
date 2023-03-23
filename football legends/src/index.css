@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(61,190,210);
+  background: linear-gradient(34deg, rgba(61,190,210,1) 37%, rgba(180,155,191,1) 65%, rgba(168,103,203,1) 181%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*! Player Card/Container Styling  */
+.card-container{
+
+  min-width: 300px;
+}
+.player-card {
+  height: 400px;
+  max-width: 280px;
+  min-width: 230px;
+
+}
+.player-card:hover{
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.player-logo{
+  transition: transform 0.2s;
+  height: 350px;
+}
+
+.player-card:hover .player-logo{
+  transform: scale(0.95);
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content:left;
+  font-size:larger;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
