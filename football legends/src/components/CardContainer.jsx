@@ -27,6 +27,7 @@ const CardContainer = () => {
               return (
                 <Col md={6} lg={4} xl={3} key={i}>
                   <PlayerCard {...player} />
+                  
                 </Col>
               );
             })}
