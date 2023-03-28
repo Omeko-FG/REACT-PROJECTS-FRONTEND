@@ -1,14 +1,32 @@
 export const lightheme = {
   colors: {
     navbarBgColor: "white",
-    mainColor: "#86C8BC",
+    mainColor: "linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)",
     logoColor: "darkslategray",
     linkColor: "#8B7E74",
     detailBgColor: "#e1f1dd",
     detailColor: "rgb(5,5,5)",
-    linkHoverColor: "rgb(5,5,5)",
-    headerFormColor: "rgba(15, 63, 42, 0.36)",
+    linkHoverColor: "#f95959",
+    headerFormColor: "#linear-gradient(180.3deg, rgba(221, 221, 221, 0.7 ) 5.5%, rgba(110, 136, 161, 0.7) 90.2%)",
   },
+
+  // background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+
+
+// .first-color { 
+// 	background: #e0ffcd; 
+// }
+	
+// .second-color { 
+// 	background: #fdffcd; 
+// }
+
+// .third-color { 
+// 	background: #ffebbb; 
+// }
+
+// .fourth-color { 
+// 	background: #ffcab0; 
   screens: {
     lg: "992px",
   },
@@ -16,7 +34,7 @@ export const lightheme = {
 export const darktheme = {
   colors: {
     navbarBgColor: "rgba(255, 255, 255, 0.46)",
-    mainColor: "rgb(15,15,15)",
+    mainColor: "#233142",
     logoColor: "rgb(5,5,5)",
     linkColor: "rgb(5,5,5)",
     detailBgColor: "rgb(15,15,15)",
@@ -44,3 +62,8 @@ export const darktheme = {
 // .fourth-color { 
 // 	background: #e3e3e3; 
 // }
+
+
+
+
+
