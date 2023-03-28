@@ -42,7 +42,7 @@ export const Header = styled.h1`
   -webkit-text-fill-color: transparent;
   color: transparent;
   transform: translate(0.1em, 0.1em);
-  background-image: linear-gradient(305deg, darkblue, yellow, darkblue);
+  background: #233142;
   -webkit-background-clip: text;
 `;
 

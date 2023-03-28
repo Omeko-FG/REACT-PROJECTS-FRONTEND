@@ -6,8 +6,8 @@ const Icon = ({path,icon, hoverColor}) => {
     <SvgIcon
       hoverColor={hoverColor}
       xmlns="http://www.w3.org/2000/svg"
-      width={32}
-      height={32}
+      width={64}
+      height={64}
       fill="currentColor"
       className={`bi bi-${icon}`}
       >

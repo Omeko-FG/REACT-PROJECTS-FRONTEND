@@ -40,7 +40,7 @@ export const CardButton = styled.button`
   border-radius: 3px;
   cursor: pointer;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   background: ${({theme})=> theme.colors.mainColor};
   color: ${({theme})=> theme.colors.linkHoverColor};

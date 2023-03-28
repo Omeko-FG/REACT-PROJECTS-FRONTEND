@@ -39,7 +39,7 @@ export const darktheme = {
     linkColor: "rgb(5,5,5)",
     detailBgColor: "rgb(15,15,15)",
     detailColor: "white",
-    linkHoverColor: "bisque",
+    linkHoverColor: "#f95959",
     headerFormColor: "rgba(255, 255, 255, 0.46)",
   },
   screens: {
