@@ -5,7 +5,7 @@ import { AuthContext } from "../context/AuthContext";
 import { MovieContext } from "../context/MovieContext";
 import { toastWarnNotify } from "../helpers/ToastNotify";
 
-const API_KEY = process.env.REACT_APP_TMDB_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=`;
 const Main = () => {
   const { movies, loading, getMovies } = useContext(MovieContext);
