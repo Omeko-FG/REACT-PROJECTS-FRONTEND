@@ -22,5 +22,5 @@ const PlayerCard =({ name, img,country,position,team })=>{
 
     );
  
-}
+} 
 export default PlayerCard;
