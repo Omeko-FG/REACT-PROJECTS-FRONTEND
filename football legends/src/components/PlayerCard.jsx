@@ -15,7 +15,7 @@ const PlayerCard =({ name, img,country,position,team })=>{
             <li>Position : {position}</li>
           </ul> 
             
-          )}
+          )} 
           <Card.Footer>
             <Card.Title>{name}</Card.Title>
           </Card.Footer></Card>
