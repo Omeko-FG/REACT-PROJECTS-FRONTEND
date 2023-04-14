@@ -8,7 +8,7 @@ const PlayerCard =({ name, img,country,position,team })=>{
         className="rounded-2 m-auto player-card"
         role="button">{showImage ? (
             <Card.Img variant="top" src={img} className="player-logo" />
-          ) : (
+          ) : ( 
             <ul className="m-1">
             <li>Country : {country}</li>
             <li>Team : {team}</li>
