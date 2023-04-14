@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
+import Card from "react-bootstrap/Card"; 
 const PlayerCard =({ name, img,country,position,team })=>{
     const [showImage, setShowImage] = useState(true);
     const handleClick = () => setShowImage(!showImage);
