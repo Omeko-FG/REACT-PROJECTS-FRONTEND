@@ -23,4 +23,4 @@ const PlayerCard =({ name, img,country,position,team })=>{
     );
  
 } 
-export default PlayerCard; 
+export default PlayerCard;  
