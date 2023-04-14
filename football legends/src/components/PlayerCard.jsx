@@ -21,6 +21,6 @@ const PlayerCard =({ name, img,country,position,team })=>{
           </Card.Footer></Card>
 
     );
-
+ 
 }
 export default PlayerCard;
