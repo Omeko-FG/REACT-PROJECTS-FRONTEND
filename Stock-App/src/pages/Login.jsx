@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import LockIcon from "@mui/icons-material/Lock";
 import image from "../assets/result.svg";
 import { Link, useNavigate } from "react-router-dom";
-import {Formik,Form} from "formik"
-
+import { Formik } from "formik"
+import { Form } from "formik"
 import { useSelector } from "react-redux";
 import TextField from "@mui/material/TextField";
 import { object, string } from 'yup';
@@ -58,18 +58,19 @@ const Login = () => {
             Login
           </Typography>
 
-          <Formik
+          <Formik 
           initianlValues={{email:"",pasword:""}}
           validationSchema={loginScheme}
           onSubmit={(values,actions)=>{
-           
+            
             actions.resetForm()
             actions.setSubmitting(false)
           }}
           >
             {({values,handleChange,handleBlur,errors,touched})=>(
               <Form>
-                <Box sx={{display:"flex", flexDirection:"column"}}>
+                <Box
+                 sx={{display:"flex", flexDirection:"column", gap:2}}>
                   <TextField
                   label="email"
                   name="email"
@@ -81,8 +82,18 @@ const Login = () => {
                   onBlur={handleBlur}
                   error={touched.email && Boolean(errors.email)}
                   helperText={touched.email && errors.email}
-                
-                  
+                  />
+                  <TextField
+                  label="Password"
+                  name="Password"
+                  id="Password"
+                  type="Password"
+                  variant="outlined"
+                  value={values.Password || ""}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  error={touched.Password && Boolean(errors.Password)}
+                  helperText={touched.Password && errors.Password}
                   />
                 </Box>  
               </Form>
