@@ -43,7 +43,7 @@ const Login = () => {
             sx={{
               backgroundColor: "secondary.light",
               m: "auto",
-              width: 40,
+              width: 40, 
               height: 40,
             }}
           >
