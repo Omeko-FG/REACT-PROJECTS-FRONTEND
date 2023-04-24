@@ -29,7 +29,7 @@ const Login = () => {
         direction="row-reverse"
         sx={{
           height: "100vh",
-          p: 2,
+          p: 2, 
         }}
       >
         <Grid item xs={12} mb={3}>
