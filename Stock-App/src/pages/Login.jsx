@@ -46,7 +46,7 @@ const Login = () => {
               width: 40, 
               height: 40,
             }}
-          >
+          > 
             <LockIcon size="30" />
           </Avatar>
           <Typography
