@@ -36,7 +36,7 @@ const Login = () => {
           <Typography variant="h3" color="primary" align="center">
             STOCK APP
           </Typography>
-        </Grid>
+        </Grid> 
 
         <Grid item xs={12} sm={10} md={6}>
           <Avatar
