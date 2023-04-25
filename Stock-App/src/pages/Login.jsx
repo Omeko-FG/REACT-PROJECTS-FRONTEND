@@ -7,7 +7,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import image from "../assets/result.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik } from "formik"
-import { Form } from "formik"
+import { Form } from "formik" 
 import { useSelector } from "react-redux";
 import TextField from "@mui/material/TextField";
 import { object, string } from 'yup';
