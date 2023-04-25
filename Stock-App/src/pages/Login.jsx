@@ -11,14 +11,19 @@ import { Form } from "formik"
 import { useSelector } from "react-redux";
 import TextField from "@mui/material/TextField";
 import { object, string } from 'yup';
+import LoadingButton from '@mui/lab/LoadingButton';
+import useAuthCall from "../hooks/useAuthCall"
  
 
 const Login = () => {
   const navigate = useNavigate();
-  const { currentUser, error } = useSelector((state) => state?.auth);
+  const { currentUser, error , loading} = useSelector((state) => state?.auth);
 
-  let loginScheme = object({
+  const { login } = useAuthCall()
+
+  const loginScheme = object({
     email: string().email().required(),
+    password: string().required("password zorunludur").min(8).max(20).matches(/\d+/, "password sayı içermeli" ).matches(/[a-z]/, "password küçük harf içermeli" ).matches(/[A-Z]/, "büyük sayı içermeli" ).matches(/[!,?{}><%&$#£+-.]+/, "Password bir özel karakter içermelidir"),
     
   });
   return (
@@ -59,20 +64,20 @@ const Login = () => {
           </Typography>
   
           <Formik  
-          initianlValues={{email:"",pasword:""}}
+          initialValues={{email:'',pasword:""}}
           validationSchema={loginScheme}
           onSubmit={(values,actions)=>{
-             
+           login(values)
             actions.resetForm()
             actions.setSubmitting(false)
           }}
           >
-            {({values,handleChange,handleBlur,errors,touched})=>(
+            {({values, handleChange , handleBlur, errors, touched})=>(
               <Form>
                 <Box
                  sx={{display:"flex", flexDirection:"column", gap:2}}>
                   <TextField
-                  label="email"
+                  label="Email"
                   name="email"
                   id="email"
                   type="email"
@@ -85,22 +90,22 @@ const Login = () => {
                   />
                   <TextField
                   label="Password"
-                  name="Password"
-                  id="Password"
-                  type="Password"
+                  name="password"
+                  id="password"
+                  type="password"
                   variant="outlined"
-                  value={values.Password || ""}
+                  value={values.password || ""}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  error={touched.Password && Boolean(errors.Password)}
-                  helperText={touched.Password && errors.Password}
+                  error={touched.password && Boolean(errors.password)}
+                  helperText={touched.password && errors.password}
                   />
+                   <LoadingButton type="submit" variant="contained" loading={loading} >Submit</LoadingButton>
                 </Box>  
               </Form>
             )}
-
- 
           </Formik>
+
           <Box sx={{ textAlign: "center", mt: 2 }}>
             <Link to="/register">Do you have not an account?</Link>
           </Box>
