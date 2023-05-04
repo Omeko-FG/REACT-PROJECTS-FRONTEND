@@ -1,7 +1,6 @@
-import { error } from 'console';
+
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import type { RootState } from '../app/store'
 
 export interface Product {
     id: number;
@@ -40,17 +39,28 @@ export const ProductsSlice = createSlice({
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-
-    // Use the PayloadAction type to declare the contents of `action.payload`
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
+    fetchStart(state){
+        state.loading=true
+        state.error=false
     },
-  },
+    getSuccesProduct ( state, action:PayloadAction<Product[]>){
+        state.loading = false;
+        state.error = false;
+        state.productsList = action.payload;
+    },
+    addFavorites(state, action:PayloadAction<Product>){
+        state.favorites=[...state.favorites, action.payload]
+    },
+    removeFavorites(state, action:PayloadAction<Product[]>){
+        state.favorites=action.payload;
+    },
+    fetchFail(state){
+        state.loading=false;
+        state.error=true;
+    },
+    }
 })
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { fetchFail,fetchStart,getSuccesProduct,addFavorites,removeFavorites  } = ProductsSlice.actions;
 
-// Other code such as selectors can use the imported `RootState` type
-export const selectCount = (state: RootState) => state.counter.value
-
-export default counterSlice.reducer
+export const productsReducer= ProductsSlice.reducer;
