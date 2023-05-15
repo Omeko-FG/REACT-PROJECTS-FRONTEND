@@ -37,7 +37,7 @@ const MovieCard = ({ title, poster_path, overview, vote_average, id }) => {
           </span>
         )}
       </div>
-      <div className="movie-over">
+      <div className="movie-over mb-[60px]">
         <h2 className="font-bold">Owerview</h2>
         <p>{overview}</p>
       </div>
