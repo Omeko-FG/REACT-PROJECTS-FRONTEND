@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="flex w-full flex-wrap items-center justify-between bg-neutral-100 dark:bg-gray-900 py-3 dark:text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start fixed top-0 z-20"
+        className="flex w-full flex-wrap items-center justify-between bg-orange-200 dark:bg-gray-900 py-3 dark:text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start fixed top-0 z-20"
         data-te-navbar-ref=""
       >
         <div className="flex w-full flex-wrap items-center justify-between p-2  sm: text-center">

@@ -42,7 +42,7 @@ body {
 .movie {
   background-color: #080f36;
   border-radius: 3px;
-  box-shadow: 4px 4px 5px rgba(63, 60, 60, 0.5);
+  box-shadow: 14px 14px 15px rgba(63, 60, 60, 0.5);
   overflow: hidden;
   margin: 1rem;
   width: 300px;
@@ -50,6 +50,11 @@ body {
   position: relative;
   cursor: pointer;
 }
+.movie:hover{
+  scale: 1.05;
+  border-radius: 20px;
+  transition-duration: 2sn;
+  }
 
 .movie img {
   object-fit: cover;
@@ -128,11 +133,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus
 input:-webkit-autofill{
-  -webkit-text-fill-color: white !important;
+  -webkit-text-fill-color: whiate !important;
   -webkit-box-shadow: 0 0 0px 0px #28292d inset !important;
   transition: background-color 5000s ease-in-out 0s !important;
 }
 
-.movie:hover{
-scale: 0.97;
-}
