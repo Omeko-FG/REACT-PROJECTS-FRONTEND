@@ -18,3 +18,4 @@ module.exports = {
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin")],
 };
+ 
