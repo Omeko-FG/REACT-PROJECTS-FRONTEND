@@ -53,7 +53,6 @@ body {
 .movie:hover{
   scale: 1.05;
   border-radius: 20px;
-  transition-duration: 2sn;
   }
 
 .movie img {
@@ -137,4 +136,3 @@ input:-webkit-autofill{
   -webkit-box-shadow: 0 0 0px 0px #28292d inset !important;
   transition: background-color 5000s ease-in-out 0s !important;
 }
-

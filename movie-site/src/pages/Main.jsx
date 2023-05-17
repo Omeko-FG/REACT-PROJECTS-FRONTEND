@@ -26,7 +26,7 @@ const Main = () => {
   };
   return (
     <>
-      <form className="flex justify-center p-2 mt-12 mb-1" onSubmit={handleSubmit}>
+      <form className="flex justify-center p-2 mt-12 m-5 text-center" onSubmit={handleSubmit}>
         <input
           type="search"
           className="w-80 h-8 rounded-md p-1 m-2  focus:border-y-2"
@@ -37,7 +37,8 @@ const Main = () => {
           Search
         </button>
       </form>
-      <div className="flex justify-center flex-wrap">
+        <h1 className="flex justify-center items-center text-red-500 max-md:500px dark:text-white text-4xl font-semibold text-[]">MOST POPULAR MOVİES OF WEEK</h1>
+      <div className="flex justify-center flex-wrap mt-5">
         {loading ? (
           <div
             className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full text-blue-600 mt-52"

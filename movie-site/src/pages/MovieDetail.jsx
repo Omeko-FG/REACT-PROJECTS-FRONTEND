@@ -35,7 +35,7 @@ const MovieDetail = () => {
   }, [movieDetailBaseUrl, videoUrl]);
 
   return (
-    <div className="md:container px-10 mx-auto py-5">
+    <div className="md:container px-10 mx-auto py-5 mt-4" >
       <h1 className="text-center text-white text-3xl">{title}</h1>
       {videoKey && <VideoSection videoKey={videoKey} />}
       <div className="md:container flex justify-center px-10">
@@ -67,7 +67,7 @@ const MovieDetail = () => {
                   to={-1}
                   className="text-blue-600 hover:text-blue-700 transition duration-500 mb-4"
                 >
-                  Go Back
+                  Go To Back
                 </Link>
               </li>
             </ul>

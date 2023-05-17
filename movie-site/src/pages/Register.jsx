@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import GoogleIcon from "../assets/icons/GoogleIcon";
 import { AuthContext } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -28,8 +29,8 @@ const Register = () => {
   //   setInfo({ ...info, [e.target.id]: e.target.value });
 
   return (
-    <div className="overflow-hidden flex-1 h-screen justify-center items-center bg-[#23242a]">
-      <div className={`form-container mt-[5vh] w-[380px] h-[580px]`}>
+    <div className="overflow-hidden mt-4 flex-1 h-screen justify-center items-center bg-success-100 dark:bg-[#23242a]">
+      <div className={`form-container mt-[5vh] w-[380px] h-[550px]`}>
         <form onSubmit={handleSubmit}>
           <h2 className="text-red-main text-2xl font-[500] text-center tracking-[0.1em] mb-3">
             Sign Up
@@ -78,6 +79,12 @@ const Register = () => {
             />
             <label htmlFor="floating_password">Password</label>
           </div>
+            <span className="text-gray-400">Go To Login Page <Link
+              className="py-3  font-[0.75em] cursor-pointer decoration-none text-teal-600 hover:text-[#ff4b45]"
+              to="/Login"
+            >
+              Login
+            </Link></span>
           <button className="btn-danger" type="submit">
             Register
           </button>

@@ -9,21 +9,21 @@ const Navbar = () => {
   // const currentUser = { displayName: "felix franko" };
   // const currentUser = false;
   return (
-    <div>
+    <div className="">
       <nav
         className="flex w-full flex-wrap items-center justify-between bg-orange-200 dark:bg-gray-900 py-3 dark:text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start fixed top-0 z-20"
         data-te-navbar-ref=""
       >
-        <div className="flex w-full flex-wrap items-center justify-between p-2  sm: text-center">
-          <Link className="pr-2 text-2xl font-semibold ms-10" to="/">
+        <div className="flex w-full flex-wrap content-center items-center justify-between p-2  sm: text-center">
+          <Link className="pr-2 text-2xl font-semibold ms-10 hover:text-orange-600" to="/">
             React Movie App
           </Link>
-
+          
           {/* Collapsible wrapper */}
           {/* Right elements */}
           <div className="relative flex items-center">
             {currentUser && (
-              <h5 className="mr-2 capitalize">{currentUser.displayName}</h5>
+              <h5 className="mr-5 capitalize hover:text-red-600">{currentUser.displayName}</h5>
             )}
             <Switch />
             <div className="relative" data-te-dropdown-ref="">
@@ -36,7 +36,7 @@ const Navbar = () => {
               >
                 <img
                   src={currentUser.photoURL || avatar}
-                  className="rounded-full"
+                  className="rounded-full m-2 "
                   style={{ height: 25, width: 25 }}
                   alt=""
                   loading="lazy"
