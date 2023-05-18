@@ -7,10 +7,10 @@ import { EventFunc } from "../models/models";
 //     handleChange : (e:React.ChangeEvent<HTMLInputElement>) => void;
 // }
 interface ISearchComp {
-  handleChange:EventFunc;
+  handleChange: EventFunc;
 }
 
-const SearchComp:React.FC<ISearchComp> = ({handleChange }) => {
+const SearchComp:React.FC<ISearchComp> = ({handleChange}) => {
   return (
     <div className="mt-5">
       <div className="relative w-6/12 mx-auto">
