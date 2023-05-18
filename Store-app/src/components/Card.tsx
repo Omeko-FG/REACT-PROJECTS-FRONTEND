@@ -23,10 +23,10 @@ const Card:React.FC<ICard> = ({item,text,handleFunc}) => {
         src={item.images[0]}
         alt={item.title}
       />
-      <div className="flex justify-between items-center bg-gray-700 p-3">
-        <h2 className="text-gray-100 font-bold ">${item.price}</h2>
+      <div className="flex justify-between items-center bg-teal-400 p-3">
+        <h2 className="text-gray-200 font-bold ">${item.price}</h2>
         <button
-          className="bg-gray-300 p-1 rounded-lg animate-pulse hover:animate-none"
+          className="bg-gray-200 p-1 rounded-lg hover:opacity-80"
           onClick={() => handleFunc(item)}>
           {text}
         </button>

@@ -22,7 +22,7 @@ const FavoritesPage = () => {
 
   return (
     <div>
-      <h1 className="font-bold text-2xl text-white text-center m-3">
+      <h1 className="font-bold text-2xl text-black text-center m-3">
         My Favorites Products
       </h1>
       <div className="flex justify-center items-center flex-wrap gap-5 p-5">
