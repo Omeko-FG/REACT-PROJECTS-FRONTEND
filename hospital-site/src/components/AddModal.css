@@ -1,0 +1,14 @@
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    width: 300px;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+  
