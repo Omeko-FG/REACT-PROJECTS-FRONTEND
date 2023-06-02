@@ -2,6 +2,7 @@ import { useState } from "react"
 import Doctors from "../components/Doctors"
 import { doctorData } from "../helpers/data"
 import { appointmentData } from "../helpers/data"
+import AppointmentList from "../components/AppointmentList"
 
 const Home = () => {
   const [doctors, setDoctors] = useState(doctorData)
@@ -30,10 +31,10 @@ const Home = () => {
         appointments={appointments}
         setAppointments={setAppointments}
       />
-      {/* <AppointmentList
+      <AppointmentList
         appointments={appointments}
         setAppointments={setAppointments}
-      /> */}
+      />
     </main>
   )
 }

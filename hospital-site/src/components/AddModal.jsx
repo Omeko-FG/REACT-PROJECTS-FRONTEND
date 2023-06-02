@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, TextField } from "@material-ui/core";
 import "./AddModal.css";
+import {appointmentData} from "../helpers/data"
 
 const AddModal = ({
   show,
@@ -43,7 +44,6 @@ const AddModal = ({
               margin="normal"
               color="warning"
             />
-
             <TextField
               label=""
               type="datetime-local"
@@ -51,7 +51,6 @@ const AddModal = ({
               fullWidth
               margin="normal"
             />
-
             <div className="text-center">
               <Button className="b1" variant="contained" color="primary" type="submit">
                 Save
