@@ -23,7 +23,7 @@ export const AuthContext = createContext();
 // export const useAuthContext = () => {
 //     return useContext(AuthContext);
 //   };
- s
+
 const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(sessionStorage.getItem("user")) || false
