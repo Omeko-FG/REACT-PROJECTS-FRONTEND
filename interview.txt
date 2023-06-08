@@ -49,7 +49,7 @@ footer
 4. What is the difference between attributes and property?
 
 1. What are Promises?
-2. What is a Callback function?
+2. What is a Callback function? 
 3. What is prototype in javascript?
 
 1. What is the difference between a class and an object in JavaScript?
