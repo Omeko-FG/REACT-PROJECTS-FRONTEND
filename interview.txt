@@ -1,0 +1,92 @@
+1. What is Git?
+2. What is the difference between Git and Github?
+3. What Does HTML Stand For?
+4. Mention the various Git repository hosting services?
+5. What are Tags?
+6. How many types of heading does an HTML contain?
+
+1. What is CSS?
+2. What is Selector?
+3. What is the CSS Box model and what are its elements?
+4. Describe floats and how they work
+5. What is Inline style?
+
+1. Briefly describe the correct usage of the following HTML5 semantic elements: header, article, section,
+footer
+2. Describe the relationship between the header and h1 tags in HTML5.
+3. What is the difference between span and div?
+4. What are the advantages of CSS?
+5. Explain universal selector.
+
+1. Could you name some built-in methods in JavaScript?
+2. What are the escape characters in JavaScript?
+3. Who developed JavaScript ?
+4. How to use a prompt box in JS?
+5. What is JavaScript ‘Strict Mode’?
+6. What is the difference between ‘var’ and ‘let’ keyword?
+7. What is JavaScript Hoisting?
+8. What is mean by NULL in JavaScript?
+
+1. Who developed JavaScript, and what was the first name of JavaScript?
+2. List some of the disadvantages of JavaScript.
+3. Define anonymous function
+4. In JavaScript what is an argument object?
+
+1. Please describe the most important advantages of using JavaScript.
+2. What is the difference between attributes and property?
+3. What is the for-in loop in JavaScript?
+4. How to check if an object is an array or not?
+
+1. What Are The Number Methods in javaScript?
+2. What Is Javascript Date Object?
+3. What Are Date Methods?
+4. Explain how to define a variable in Sass?
+5. Explain what is the difference between Sass and SCSS?
+
+1. What Does It Mean to “Destructure” a Data Structure?
+2. What is Object Destructuring in JavaScript and How to use it?
+3. What is the difference between an alert box and a confirmation box?
+4. What is the difference between attributes and property?
+
+1. What are Promises?
+2. What is a Callback function?
+3. What is prototype in javascript?
+
+1. What is the difference between a class and an object in JavaScript?
+2.2. Why are classes important in OOP? How do they help developers write better code?
+3. Can you provide some examples of using inheritance in JavaScript?
+4. What do you understand by polymorphism?
+5. What is encapsulation?
+
+1. What are controlled components?
+2. What is a higher order component?
+3. How Virtual-DOM is more efficient than Dirty checking?
+
+1. What are controlled components?
+2. What is a higher order component?
+3. How Virtual-DOM is more efficient than Dirty checking?
+
+1. How often does the React useState update? Why?
+2. What is the difference between the ES6 and ES5 standards for React?
+3. Why is there a need for using keys in Lists?
+4. What are the components in React?
+5. What is an event in React?
+
+1. What is React Router?
+2. How does browser history work in React Router?
+3. What is nested routing?
+4. What do you understand about the ‘to’ attribute in React Router?
+5. What does it mean for a component to be mounted in React?
+6. What is the difference between state and props?
+
+1. What is the difference between state and props?
+2. What are the lifecycle methods of ReactJS class components?
+3. What are the different phases of ReactJS component lifecycle?
+4. What is prop drilling and how can you avoid it?
+
+1. What is a lambda function in Python?
+2. What is init??
+3. What are decorators in Python?
+
+1. What do you mean by a table and a field in SQL?
+2. How does inheritance work in python? Explain it with an example?
