@@ -1,0 +1,2 @@
+<h1>Turkish<h1/><p>Bu dosya benim sadece <bold>react<bold/> ile yaptığım projelerin bulunduğu yerdir. İçlerinden önemli olanlarının bazılarının kendi repolarını oluşturup deploy ettim. Onları Github sayfamda bulabilirsiniz.<p/>
+ <h1>English<h1/><p>This file is where the projects I made with React are located. I created and deployed their own repos of some of the important ones. You can find them on my Github page..<p/>
