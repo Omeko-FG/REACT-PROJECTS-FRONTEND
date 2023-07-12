@@ -1,10 +1,6 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
+![ezgif com-video-to-gif (10)](https://github.com/Omeko-FG/Store-app-REACT-STYLED-COM.--API/assets/119002766/664eb951-087a-4f79-9e05-b58b16ae73a8)
 
-# Clarus Store
-## Description
-
-Project aims to create a Clarus Store.
+#  Store App
 
 ## Problem Statement
 
@@ -42,9 +38,7 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
 
-![tsstore](tsstore.gif)
 
 ## Objective
 
@@ -68,11 +62,11 @@ Build a Milestone Blog App using ReactJS.
 
 ## Steps to Solution
 
-- Step 1 : Create React App using `npx create-react-app ts-store --template @anthonyharold` or `yarn create react-app ts-store --template @anthonyharold`.(With this command, both tailwindcss and typescript are ready to go.)
+- Step 1 : Create React App using `npx create-react-app ts-store --template @anthonyharold` or `yarn create react-app ts-store --template @gurbuzomer`.(With this command, both tailwindcss and typescript are ready to go.)
 
 - Step 2 : Use dummyJson API for products..
 
-- Step 3 : You can view sample app on https://clarus-store.vercel.app/.
+- Step 3 : You can view sample app on https://store-app-react-styled-com-api.vercel.app/
 
 - Step 4 : Add project gif to your project and README.md file.
 
@@ -86,3 +80,4 @@ Build a Milestone Blog App using ReactJS.
 - https://dummyjson.com/docs/products/#search
 - https://redux-toolkit.js.org/tutorials/typescript
 - https://tailwindcss.com/
+
